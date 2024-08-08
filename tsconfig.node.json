@@ -18,5 +18,10 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+
+  "paths": {
+    "@/*": ["./src/*"],
+    "@app/*": ["./app/*"]
+  },
   "include": ["vite.config.ts"]
 }
