@@ -2,36 +2,44 @@ import React, { useState, useEffect, useRef } from 'react';
 import { ButtonCarrouselRight } from './ButtonCarrouselRight';
 import { ButtonCarrouselLeft } from './ButtonCarrouselLeft';
 import { ImageSlider } from '../interfaces/Index';
+import {
+    buenosAires1,
+    buenosAires2,
+    buenosAires3,
+    buenosAires4,
+    buenosAires5,
+    buenosAires6,
+} from '../assets/index';
 
 const arrayImagesSlider: ImageSlider[] = [
     {
         id: 1,
-        ruta: '../../public/buenosAires-1.jpg',
+        ruta: buenosAires1, // Asignar la ruta directamente
         text: 'edificio 1',
     },
     {
         id: 2,
-        ruta: '../../public/buenosAires-2.jpg',
+        ruta: buenosAires2,
         text: 'edificio 2',
     },
     {
         id: 3,
-        ruta: '../../public/buenosAires-3.jpg',
+        ruta: buenosAires3,
         text: 'edificio 3',
     },
     {
         id: 4,
-        ruta: '../../public/buenosAires-4.jpg',
+        ruta: buenosAires4,
         text: 'edificio 4',
     },
     {
         id: 5,
-        ruta: '../../public/buenosAires-5.jpg',
+        ruta: buenosAires5,
         text: 'edificio 5',
     },
     {
         id: 6,
-        ruta: '../../public/buenosAires-6.jpg',
+        ruta: buenosAires6,
         text: 'edificio 6',
     },
 ];
