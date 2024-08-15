@@ -1,16 +1,17 @@
 import { useState } from 'react';
 import { Nav } from '../components';
 import { BiMenu, BiX } from 'react-icons/bi';
+import logo from '../../public/logo.png';
 
 export const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
     return (
-        <header className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-[#F3F2F7] px-6 py-2 drop-shadow-md md:px-24">
+        <header className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-[rgba(0,0,0,0.48)] px-6 py-2 drop-shadow-md md:px-24">
             <a href="#">
                 <img
                     className="w-34 h-24 py-2 transition-all hover:scale-105"
-                    src="https://w7.pngwing.com/pngs/19/66/png-transparent-logo-brand-building-angle-building-text.png"
+                    src={logo}
                     alt="Company Logo"
                 />
             </a>

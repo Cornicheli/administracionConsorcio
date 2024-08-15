@@ -4,6 +4,9 @@ import buenosAires3 from './buenosAires-3.jpg';
 import buenosAires4 from './buenosAires-4.jpg';
 import buenosAires5 from './buenosAires-5.jpg';
 import buenosAires6 from './buenosAires-6.jpg';
+import phone from './telefono.png';
+import ubication from './ubicacion.png';
+import email from './email.png';
 
 export {
     buenosAires1,
@@ -12,4 +15,7 @@ export {
     buenosAires4,
     buenosAires5,
     buenosAires6,
+    phone,
+    ubication,
+    email,
 };

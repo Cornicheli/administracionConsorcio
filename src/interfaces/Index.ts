@@ -25,3 +25,9 @@ export interface ImageSlider {
     ruta: string;
     text: string;
 }
+
+export interface DesciptionContact {
+    photo: string;
+    photoAlt: string;
+    description: string;
+}

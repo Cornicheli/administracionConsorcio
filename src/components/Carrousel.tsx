@@ -83,16 +83,16 @@ const Carousel: React.FC = () => {
     return (
         <div
             id="slider"
-            className="relative mt-20 h-[500px] w-full overflow-hidden bg-gray-300 shadow-none xl:h-[600px]">
-            <div className="flex h-full w-[600%]" ref={divSliderRef}>
+            className="relative h-[500px] w-full overflow-hidden bg-black bg-opacity-50 shadow-none xl:h-[800px]">
+            <div className="relative flex h-full w-[600%]" ref={divSliderRef}>
                 {arrayImagesSlider.map(imagen => (
-                    <div key={imagen.id} className="h-full w-[calc(100%/6)]">
-                        <img
-                            className="h-full w-full select-none object-cover"
-                            src={imagen.ruta}
-                            alt={imagen.text}
-                        />
-                    </div>
+                    <div
+                        key={imagen.id}
+                        className="h-full w-[calc(100%/6)] bg-cover bg-center"
+                        style={{
+                            backgroundImage: `url(${imagen.ruta})`,
+                        }}
+                    />
                 ))}
             </div>
             <ButtonCarrouselLeft

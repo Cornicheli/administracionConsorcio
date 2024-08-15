@@ -2,7 +2,7 @@ import { Servicios } from '../interfaces/Index';
 
 export const Services = ({ title, description, image }: Servicios) => {
     return (
-        <div className="flex flex-col items-center justify-center rounded-md bg-gray-100 p-4 shadow-md">
+        <div className="flex flex-col items-center justify-center rounded-md bg-gray-100 p-4 shadow-md hover:scale-105 xl:h-[35vh]">
             <img
                 src={image}
                 alt={title}

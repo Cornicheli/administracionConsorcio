@@ -4,7 +4,7 @@ import Hero from '../screens/Hero';
 export const Card = ({ photo, photoDescription, description }: Index) => {
     return (
         <>
-            <div className="h-min-[65vh] my-14 grid place-items-center md:grid-cols-1 xl:grid-cols-2">
+            <div className="my-14 grid place-items-center md:grid-cols-1 xl:h-[65vh] xl:grid-cols-2">
                 <figure className="w-82 rounded-sm p-2 lg:w-72 xl:h-[400px] xl:w-[550px]">
                     <img
                         className="h-full w-full rounded-sm"
