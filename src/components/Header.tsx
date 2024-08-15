@@ -24,15 +24,15 @@ export const Header = () => {
                 </ul>
             </nav>
             <button
-                className="block cursor-pointer bg-[#F3F2F7] text-5xl xl:hidden"
+                className="bg-[rgba(0,0,0,0.48) block cursor-pointer text-5xl xl:hidden"
                 aria-label="Open Menu"
                 onClick={() => {
                     setIsMenuOpen(!isMenuOpen);
                 }}>
-                <BiMenu name="menu" />
+                <BiMenu name="menu" color="white" />
             </button>
             <div
-                className={`absolute left-0 top-0 flex w-full flex-col items-center gap-6 bg-[#F3F2F7] text-lg font-semibold transition-transform xl:hidden ${
+                className={`absolute left-0 top-0 flex w-full flex-col items-center gap-6 bg-[rgba(0,0,0,0.48)] text-lg font-semibold transition-transform xl:hidden ${
                     isMenuOpen
                         ? 'translate-y-0 transform opacity-100'
                         : 'translate-y-full transform opacity-0'
@@ -41,12 +41,12 @@ export const Header = () => {
                     transition: 'transform 0.3s ease, opacity 0.3s ease',
                 }}>
                 <button
-                    className="absolute right-1 top-2 block cursor-pointer bg-[#F3F2F7] text-4xl xl:hidden"
+                    className="absolute right-1 top-2 z-50 block cursor-pointer text-4xl xl:hidden"
                     aria-label="Close Menu"
                     onClick={() => {
                         setIsMenuOpen(!isMenuOpen);
                     }}>
-                    <BiX name="x" />
+                    <BiX name="x" color="white" />
                 </button>
                 <Nav urlLink={'#'} text="Home" />
                 <Nav urlLink={'#'} text="Empresa" />
